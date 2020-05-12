@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    web-api:
+      path: /web-api/**
+      serviceId: web-api
+
+logging:
+  config: classpath:logback/log4j2-dev.xml
