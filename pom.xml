@@ -12,6 +12,7 @@
         <module>web-api</module>
         <module>superhonor-eureka-server</module>
         <module>superhonor-service-zuul</module>
+        <module>superhonor-service-zero</module>
     </modules>
 
     <name>superhonor-project</name>

@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://10.10.128.123:8761/eureka/
 server:
   port: 8769
 spring:
@@ -12,6 +12,9 @@ zuul:
     web-api:
       path: /web-api/**
       serviceId: web-api
+    service-zero:
+      path: /service-zero/**
+      serviceId: service-zero
 
 logging:
   config: classpath:logback/log4j2-dev.xml

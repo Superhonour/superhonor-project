@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>web-api</artifactId>
+    <artifactId>superhonor-service-zero</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>superhonor-web-api</name>
-    <description>web-api</description>
+    <name>superhonor-service-zero</name>
+    <description>service-zero</description>
 
     <dependencies>
         <dependency>
@@ -36,13 +36,4 @@
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>

@@ -1,5 +1,13 @@
-server:
-  port: 8761
+spring:
+  application:
+    name: eurka-server
+
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
 
 eureka:
   instance:
@@ -10,9 +18,18 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
+---
 spring:
-  application:
-    name: eurka-server
+  profiles: sit
+
+eureka:
+  instance:
+    hostname: 10.10.128.123
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 logging:
-  config: classpath:logback/log4j2-dev.xml
+  config: classpath:logback/log4j2-sit.xml

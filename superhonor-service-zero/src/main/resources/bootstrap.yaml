@@ -1,9 +1,9 @@
 server:
-  port: 8762
+  port: 8763
 
 spring:
   application:
-    name: web-api
+    name: service-zero
   zipkin:
     base-url: http://localhost:9411
 
