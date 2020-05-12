@@ -1,16 +1,32 @@
-server:
-  port: 8763
-
 spring:
   application:
     name: service-zero
+  profiles:
+    active: dev
+
   zipkin:
     base-url: http://localhost:9411
+
+---
+spring:
+  profiles: dev
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://10.10.128.123:8761/eureka/
 
 logging:
   config: classpath:logback/log4j2-dev.xml
+
+---
+spring:
+  profiles: sit
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.10.128.123:8761/eureka/
+
+logging:
+  config: classpath:logback/log4j2-sit.xml
