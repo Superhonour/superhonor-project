@@ -10,6 +10,7 @@
     <version>1.0.0</version>
     <modules>
         <module>web-api</module>
+        <module>superhonor-eureka-server</module>
         <module>superhonor-service-zuul</module>
     </modules>
 
