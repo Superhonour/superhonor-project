@@ -1,0 +1,14 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: web-api
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  config: classpath:logback/log4j2-dev.xml
