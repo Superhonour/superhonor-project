@@ -16,6 +16,7 @@ public class MiyaController {
     @RequestMapping("/miya")
     public String miya(){
         LOGGER.info("info is being called");
+        LOGGER.error("info is being called");
         return "miya";
     }
 }

@@ -9,10 +9,6 @@ spring:
 ---
 spring:
   profiles: dev
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://10.10.128.123:8761/eureka/
 
 logging:
   config: classpath:logback/log4j2-dev.xml
@@ -20,10 +16,6 @@ logging:
 ---
 spring:
   profiles: sit
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://10.10.128.123:8761/eureka/
 
 logging:
   config: classpath:logback/log4j2-sit.xml

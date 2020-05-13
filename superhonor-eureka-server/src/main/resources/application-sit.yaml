@@ -1,2 +1,14 @@
 server:
   port: 8761
+
+eureka:
+  instance:
+    hostname: 10.10.128.123
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+logging:
+  config: classpath:logback/log4j2-sit.xml

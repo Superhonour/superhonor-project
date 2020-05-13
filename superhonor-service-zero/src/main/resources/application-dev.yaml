@@ -1,6 +1,15 @@
 server:
   port: 8763
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.10.128.123:8761/eureka/
+  # 自定义实例编号
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
+    # 优先使用IP地址方式进行注册服务
+    prefer-ip-address: true
 
 
 
