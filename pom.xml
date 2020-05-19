@@ -13,6 +13,7 @@
         <module>superhonor-eureka-server</module>
         <module>superhonor-service-zuul</module>
         <module>superhonor-service-zero</module>
+        <module>superhonor-service-mq</module>
     </modules>
 
     <name>superhonor-project</name>

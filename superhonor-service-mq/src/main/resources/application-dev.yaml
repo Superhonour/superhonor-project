@@ -1,0 +1,43 @@
+server:
+  port: 8764
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.10.128.123:8761/eureka/
+  # 自定义实例编号
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
+    # 优先使用IP地址方式进行注册服务
+    prefer-ip-address: true
+
+spring:
+  # Kafka 整合
+  kafka:
+    bootstrap-servers: 10.10.128.125:9092 #(kafka生产集群ip+port端口)
+    producer:
+      buffer-memory: 40960
+      retries: 0
+      batch-size: 4096
+      properties:
+        linger.ms: 1
+    consumer:
+      enable-auto-commit: true #(是否自动提交)
+      auto-commit-interval: 100ms
+      auto-offset-reset: latest #(实时生产，实时消费，不会从头开始消费)
+      group-id: test #(消费组)
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+  # ActiveMQ 整合
+  activemq:
+    broker-url: tcp://10.10.128.125:61616
+    user: admin
+    password: admin
+    in-memory: true
+    pool:
+      enabled: false
+
+
+
+
