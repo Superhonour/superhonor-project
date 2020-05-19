@@ -16,8 +16,11 @@ import javax.jms.Destination;
 @RequestMapping("/active")
 public class ActiveController {
 
-    @Autowired
     private ActiveProducer producer;
+
+    public ActiveController(ActiveProducer producer) {
+        this.producer = producer;
+    }
 
     @GetMapping("/message")
     public void send() {
