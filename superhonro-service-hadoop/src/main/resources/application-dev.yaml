@@ -1,0 +1,37 @@
+server:
+  port: 8765
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.10.128.123:8761/eureka/
+  # 自定义实例编号
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
+    # 优先使用IP地址方式进行注册服务
+    prefer-ip-address: true
+
+spring:
+  datasource:
+    url: jdbc:mysql://10.10.116.15:3306/awesome?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=GMT%2B8
+    #url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: Thctlrb888
+    driver-class-name: com.mysql.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#mybatis-plus
+mybatis-plus:
+  typeAliasesPackage: com.superhonor.service.hadoop
+  mapperLocations: classpath:mapper/*.xml
+
+#hadoop
+hdfs:
+  path: hdfs://10.10.128.125:9000
+  username: root
+
+
+
+
+
