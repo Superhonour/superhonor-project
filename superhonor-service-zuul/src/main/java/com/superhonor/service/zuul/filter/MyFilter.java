@@ -2,11 +2,15 @@ package com.superhonor.service.zuul.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import com.superhonor.service.zuul.configuration.GateWaysCrosConfig;
+import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author liuweidong
@@ -49,4 +53,6 @@ public class MyFilter extends ZuulFilter {
         log.info("ok");
         return null;
     }
+
+
 }

@@ -1,7 +1,6 @@
 package com.superhonor.service.zuul.configuration;
 
 //加入一个springboot自项目启动跨域配置，
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;

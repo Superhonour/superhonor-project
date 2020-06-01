@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service-elasitcsearch
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+
+logging:
+  config: classpath:logback/log4j2-dev.xml
+
+---
+spring:
+  profiles: sit
+
+logging:
+  config: classpath:logback/log4j2-sit.xml
