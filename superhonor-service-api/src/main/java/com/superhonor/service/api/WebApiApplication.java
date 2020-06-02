@@ -1,4 +1,4 @@
-package com.superhonor.web.api;
+package com.superhonor.service.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

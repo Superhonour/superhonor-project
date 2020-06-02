@@ -1,4 +1,4 @@
-package com.superhonor.web.api.configuration;
+package com.superhonor.service.api.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

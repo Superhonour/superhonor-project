@@ -7,8 +7,8 @@ spring:
 zuul:
   routes:
     web-api:
-      path: /web-api/**
-      serviceId: web-api
+      path: /service-api/**
+      serviceId: service-api
     service-zero:
       path: /service-zero/**
       serviceId: service-zero
