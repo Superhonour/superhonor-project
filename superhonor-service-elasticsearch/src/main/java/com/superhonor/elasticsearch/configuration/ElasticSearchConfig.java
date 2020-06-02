@@ -1,6 +1,6 @@
 package com.superhonor.elasticsearch.configuration;
 
-import com.superhonor.elasticsearch.utils.DozerHelper;
+import com.superhonor.common.util.DozerHelper;
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;

@@ -1,7 +1,7 @@
 package com.superhonor.elasticsearch.service;
 
 import com.alibaba.fastjson.JSONObject;
-import com.superhonor.elasticsearch.utils.DozerHelper;
+import com.superhonor.common.util.DozerHelper;
 import org.apache.commons.collections.CollectionUtils;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.bulk.BulkResponse;

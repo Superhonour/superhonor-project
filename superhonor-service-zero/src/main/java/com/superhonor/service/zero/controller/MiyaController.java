@@ -14,8 +14,9 @@ public class MiyaController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MiyaController.class);
 
     @RequestMapping("/miya")
-    public String miya(){
+    public String miya() throws InterruptedException {
         LOGGER.info("info is being called");
+        Thread.sleep(60000);
         LOGGER.error("info is being called");
         return "miya";
     }

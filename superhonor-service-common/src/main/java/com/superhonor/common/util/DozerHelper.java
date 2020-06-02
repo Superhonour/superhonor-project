@@ -1,7 +1,8 @@
-package com.superhonor.elasticsearch.utils;
+package com.superhonor.common.util;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.dozer.DozerBeanMapper;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collection;
