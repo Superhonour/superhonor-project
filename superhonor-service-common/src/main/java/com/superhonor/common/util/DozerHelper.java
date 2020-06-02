@@ -2,7 +2,6 @@ package com.superhonor.common.util;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.dozer.DozerBeanMapper;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,6 +11,7 @@ import java.util.List;
  * @author liuxx
  * @date 2017/6/14
  */
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class DozerHelper extends DozerBeanMapper {
 
     /**
