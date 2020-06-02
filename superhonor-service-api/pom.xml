@@ -9,12 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>web-api</artifactId>
+    <artifactId>superhonor-service-api</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>superhonor-web-api</name>
-    <description>web-api</description>
+    <name>superhonor-service-api</name>
+    <description>service-api</description>
 
     <dependencies>
         <dependency>

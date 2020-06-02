@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>web-api</module>
+        <module>superhonor-service-api</module>
         <module>superhonor-eureka-server</module>
         <module>superhonor-service-zuul</module>
         <module>superhonor-service-zero</module>
@@ -97,6 +97,8 @@
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
+                    <include>**/*.yaml</include>
+                    <include>**/*.yml</include>
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
                     <include>**/*.factories</include>
@@ -114,11 +116,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.6.0.1398</version>
             </plugin>
         </plugins>
     </build>
