@@ -52,4 +52,5 @@
             <version>${dozer.version}</version>
         </dependency>
     </dependencies>
+
 </project>
