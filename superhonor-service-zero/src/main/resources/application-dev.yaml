@@ -11,6 +11,14 @@ eureka:
     # 优先使用IP地址方式进行注册服务
     prefer-ip-address: true
 
+spring:
+  redis:
+    cluster:
+      nodes: 10.10.116.15:6736,10.10.116.15:6738,10.10.116.15:6737
+    password: thctlrbetc
+    timeout: 30000
+
+
 
 
 
