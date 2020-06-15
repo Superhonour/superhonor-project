@@ -18,6 +18,8 @@
         <module>superhonor-service-elasticsearch</module>
         <module>superhonor-service-common</module>
         <module>superhonor-boot-starter-parent</module>
+        <module>superhonor-rpc-core</module>
+        <module>superhonor-rpc-test</module>
     </modules>
 
     <name>superhonor-project</name>
@@ -40,13 +42,14 @@
         <lombok.version>1.16.20</lombok.version>
         <baomidou.version>2.2.0</baomidou.version>
         <mysql.version>5.1.48</mysql.version>
-        <log4j2.version>2.0.3.RELEASE</log4j2.version>
+        <log4j2.version>2.0.2</log4j2.version>
         <fastjson.version>1.2.47</fastjson.version>
         <commons-collections.version>3.2.2</commons-collections.version>
         <es.version>6.2.3</es.version>
         <dozer.version>5.5.1</dozer.version>
         <feign.version>2.0.3</feign.version>
         <log4j-bom.version>2.10.0</log4j-bom.version>
+        <zk.version>3.5.7</zk.version>
     </properties>
 
     <dependencies>
